@@ -2,39 +2,41 @@
 =================================================
 
 ## Project Name
+Full Stack Project
 
-### Author: Student/Group Name
+### Author: 
+Trevor Stam
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [deployed site](http://xyz.com)
+* [backend-repo](https://github.com/trevorstam/full-stack-project-backend)
+* [deployed site backend](https://fullstack-backend-trevor.herokuapp.com/)
+* [frontend-repo](https://github.com/trevorstam/full-stack-project-frontend)
+* Can't deploy to AWS
+
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### `index.js`
+Imports component app and renders it
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+#### `App.js`
+- Imports Page component and renders it.
+- Mounts component, hooks up the heroku back end and sets state of content
+- Exports App component
 
-###### `bar(array) -> array`
-Usage Notes or examples
+#### `Page.js`
+- Imports Deck component and renders its content
+- Exports Page component
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+#### `Deck.js`
+- Imports Card component and renders its content
+- Exports Deck component
 
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+#### `Card.js`
+- Exports Card component
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* No tests yet
+* Run with npm test or yarn test
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML-full-stack-project](./assets/UML-fsp.JPG)
